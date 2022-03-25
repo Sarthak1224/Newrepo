@@ -1,0 +1,9 @@
+provider "aws" {	
+	region = us-west2"
+	access_key = "ExAmpLEKey21fjwljsfjkrf"
+	secre_key = "EXamPLeSECreTKEySDAHhhhsJJn23Ksda"
+	}
+resource "aws_intance" "ourfirst_ec2" {
+	ami = "ami-05b622b5fa0269787"
+	intance_type = "m5.2xlarge"
+}
